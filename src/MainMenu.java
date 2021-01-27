@@ -3,11 +3,6 @@ import java.util.Scanner;
 
 public class MainMenu {
 	public static int input;
-	public static void main(String[] args) {
-		
-		navigate();
-
-	}
 	public static void navigate() {
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("What would you like to do?");
