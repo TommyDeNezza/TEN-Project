@@ -6,18 +6,22 @@ public class StudentDataBank
 	public static void CompileArray() throws IOException
 		{
 		Scanner file = new Scanner(new File("StudentList.txt"));
-		
 		for(int i = 0; i < 24; i++)
 			{
-			studentData.add(new Student(file.next()+" "+file.next(), file.next(), file.next(), file.next(), file.next(), file.next(), file.next(), 0));
+			studentData.add(new Student(file.next(), file.next(), file.next(), file.next(), file.next(), file.next(), file.next(), file.next(), 0));
 			}
 		}
 	public static void generateGPA()
 		{
 		
 		}
-	public static void letterNumberAssociation(String letter)
+	public static double letterNumberAssociation(String l)
 		{
-		
+		switch(l)
+			{
+			case "A":
+			return 4;
+			}
+		return 0;
 		}
 	}
