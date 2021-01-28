@@ -2,7 +2,8 @@ import java.util.*;
 import java.io.*;
 public class Student
 	{
-	String name;
+	String fName;
+	String lName;
 	String class1;
 	String grade1;
 	String class2;
@@ -10,9 +11,10 @@ public class Student
 	String class3;
 	String grade3;
 	double gpa;
-	public Student(String n, String c1, String g1, String c2, String g2, String c3, String g3, double g)
+	public Student(String fn, String ln, String c1, String g1, String c2, String g2, String c3, String g3, double g)
 		{
-		name = n;
+		fName = fn;
+		lName = ln;
 		class1 = c1;
 		grade1 = g1;
 		class2 = c2;
@@ -22,13 +24,21 @@ public class Student
 		gpa = g;
 		
 		}
-	public String getName()
+	public String getFName()
 		{
-		return name;
+		return fName;
 		}
-	public void setName(String name)
+	public void setFName(String name)
 		{
-		this.name = name;
+		this.fName = name;
+		}
+	public String getLName()
+		{
+		return lName;
+		}
+	public void setLName(String name)
+		{
+		this.lName = name;
 		}
 	public String getClass1()
 		{
