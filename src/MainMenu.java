@@ -21,7 +21,7 @@ public class MainMenu {
 				AddStudent.addToTextFile();
 			}
 			if(input == 2) {
-				
+				// insert the delete student method here like above. 
 			}
 
 		}
@@ -29,12 +29,36 @@ public class MainMenu {
 			System.out.println("Change Student Grades/Schedule");
 			System.out.println("1)   Change Grade");
 			System.out.println("2)   Switch Classes");
+			input = userInput.nextInt();
+			if(input == 1) {
+				//add the compile array list method here 
+				// add the change grade method
+			}
+			if(input == 2) {
+				//add the compile array list method here 
+				// add the change classes method
+				
+			}
 		}
 		if(input == 3) {
 			System.out.println("Sort Students");
 			System.out.println("1)   Sort by last name");
 			System.out.println("2)   Sort by GPA");
 			System.out.println("3)   Sort by period");
+			input = userInput.nextInt();
+			if(input == 1) {
+				//add the compile array list method here 
+				// add the sort last name method
+			}
+			if(input == 2) {
+				//add the compile array list method here 
+				// add the sort gpa method
+				
+			}
+			if(input == 3) {
+				// add compile array list method
+				// add sort by period method
+			}
 		}
 	}
 
