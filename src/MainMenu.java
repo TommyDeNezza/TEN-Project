@@ -27,6 +27,8 @@ public class MainMenu {
 			System.out.println("2)   Sort by GPA");
 			System.out.println("3)   Sort by period");
 		}
+		
+	// Test comment - ignore
 	}
 
 }
