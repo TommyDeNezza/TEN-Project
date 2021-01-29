@@ -6,5 +6,6 @@ public class RunnerClass
 		{
 		StudentDataBank.CompileArray();
 		System.out.println(StudentDataBank.studentData.get(0).getGrade1());
+		MainMenu.navigate();
 		}
 	}
