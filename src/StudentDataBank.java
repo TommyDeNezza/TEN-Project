@@ -13,7 +13,15 @@ public class StudentDataBank
 		}
 	public static void generateGPA()
 		{
-		
+		for(Student s: studentData)
+			{
+			double tempGPA = 0;
+			tempGPA += letterNumberAssociation(s.getGrade1());
+			tempGPA += letterNumberAssociation(s.getGrade2());
+			tempGPA += letterNumberAssociation(s.getGrade3());
+			tempGPA /= 3;
+			s.setGpa((Math.round(tempGPA*100))/100.0);
+			}
 		}
 	public static double letterNumberAssociation(String l)
 		{
