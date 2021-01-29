@@ -28,7 +28,7 @@ public class MainMenu {
 			System.out.println("3)   Sort by period");
 		}
 		
-	// Test comment - ignore
+
 	}
 
 }
