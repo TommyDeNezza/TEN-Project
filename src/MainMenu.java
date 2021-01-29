@@ -1,9 +1,10 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 
 public class MainMenu {
 	public static int input;
-	public static void navigate() {
+	public static void navigate() throws IOException {
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("What would you like to do?");
 		System.out.println("1)   Add or delete a student");
@@ -15,6 +16,14 @@ public class MainMenu {
 			System.out.println("Add or Delete a Student");
 			System.out.println("1)   Add a student");
 			System.out.println("2)   Delete a student");
+			input = userInput.nextInt();
+			if(input == 1) {
+				AddStudent.addToTextFile();
+			}
+			if(input == 2) {
+				
+			}
+
 		}
 		if(input == 2) {
 			System.out.println("Change Student Grades/Schedule");
