@@ -6,10 +6,11 @@ public class StudentDataBank
 	public static void CompileArray() throws IOException
 		{
 		Scanner file = new Scanner(new File("StudentList.txt"));
-		for(int i = 0; i < 24; i++)
+		while(file.hasNext())
 			{
 			studentData.add(new Student(file.next(), file.next(), file.next(), file.next(), file.next(), file.next(), file.next(), file.next(), 0));
 			}
+		generateGPA();
 		}
 	public static void generateGPA()
 		{
