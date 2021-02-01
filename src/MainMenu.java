@@ -21,7 +21,7 @@ public class MainMenu {
 				AddStudent.addToTextFile();
 			}
 			if(input == 2) {
-				// insert the delete student method here like above. 
+				DeleteStudent.deleteLine(DeleteStudent.findString());
 			}
 
 		}
