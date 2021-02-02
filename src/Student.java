@@ -22,7 +22,6 @@ public class Student
 		class3 = c3;
 		grade3 = g3;
 		gpa = g;
-		
 		}
 	public String getFName()
 		{
