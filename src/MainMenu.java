@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class MainMenu {
 	public static int input;
+	public static int periodSort;
 	public static void navigate() throws IOException {
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("What would you like to do?");
@@ -56,8 +57,11 @@ public class MainMenu {
 				
 			}
 			if(input == 3) {
-				// add compile array list method
-				// add sort by period method
+				System.out.println("Sort by period");
+				System.out.println("1)   first period");
+				System.out.println("2)   second period");
+				System.out.println("3)   third period");
+				periodSort=userInput.nextInt();
 			}
 		}
 		
