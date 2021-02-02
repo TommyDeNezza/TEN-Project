@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.Collections;
 import java.util.Scanner;
 
 
@@ -42,6 +43,7 @@ public class MainMenu {
 			}
 		}
 		if(input == 3) {
+			StudentDataBank.CompileArray();
 			System.out.println("Sort Students");
 			System.out.println("1)   Sort by last name");
 			System.out.println("2)   Sort by GPA");
@@ -52,8 +54,7 @@ public class MainMenu {
 				// add the sort last name method
 			}
 			if(input == 2) {
-				//add the compile array list method here 
-				// add the sort gpa method
+				Collections.sort(StudentDataBank.studentData, new SortByGPA());
 				
 			}
 			if(input == 3) {
