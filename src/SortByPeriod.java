@@ -10,5 +10,7 @@ public class SortByPeriod implements Comparator<Student>
 		else 
 			return s1.getClass3().compareTo(s2.getClass3());
 	}
+	
+	System.out.println(" Have a nice day!");
 }
 
