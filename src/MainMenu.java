@@ -34,18 +34,15 @@ public class MainMenu {
 			int input1 = userInput.nextInt();
 			if(input1 == 1) {
 				StudentDataBank.CompileArray();
-				StudentDataBank.generateGPA();
 				PrintNames.printNames();
 				
 			}
 			if(input1 == 2) {
 				StudentDataBank.CompileArray();
-				StudentDataBank.generateGPA();
 				PrintNames.printNames();
 			}
 		}
 		if(input == 3) {
-			StudentDataBank.CompileArray();
 			System.out.println("Sort Students");
 			System.out.println("1)   Sort by last name");
 			System.out.println("2)   Sort by GPA");
@@ -53,14 +50,12 @@ public class MainMenu {
 			int input1 = userInput.nextInt();
 			if(input1 == 1) {
 				StudentDataBank.CompileArray();
-				StudentDataBank.generateGPA();
-				Collections.sort(StudentDataBank.studentData, new SortByGPA());
+				Collections.sort(StudentDataBank.studentData, new SortByLastName());
 				PrintNames.printNames();
 			}
 			if(input1 == 2) {
 				StudentDataBank.CompileArray();
-				StudentDataBank.generateGPA();
-				Collections.sort(StudentDataBank.studentData, new SortByLastName());
+				Collections.sort(StudentDataBank.studentData, new SortByGPA());
 				PrintNames.printNames();
 			}
 			if(input1 == 3) {

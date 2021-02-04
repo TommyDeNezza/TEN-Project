@@ -11,5 +11,6 @@ public class PrintNames
 			System.out.println(" ");
 			i++;
 			}
+		System.out.println(MainMenu.input);
 		}
 	}
