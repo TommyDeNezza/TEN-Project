@@ -31,7 +31,7 @@ public class ChangeGrade
 					{
 					System.out.println("What would you like to change the grade to?");
 					String grade = userInput.nextLine();
-					StudentDataBank.studentData.get(i).setGrade2(grade);
+					StudentDataBank.studentData.get(i).setGrade3(grade);
 					System.out.println("Here's the new list:");
 					}
 				}

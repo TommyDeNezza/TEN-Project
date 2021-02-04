@@ -18,11 +18,11 @@ public class MainMenu {
 			System.out.println("Add or Delete a Student");
 			System.out.println("1)   Add a student");
 			System.out.println("2)   Delete a student");
-			input = userInput.nextInt();
-			if(input == 1) {
+			int input1 = userInput.nextInt();
+			if(input1 == 1) {
 				AddStudent.addToTextFile();
 			}
-			if(input == 2) {
+			if(input1 == 2) {
 				DeleteStudent.deleteLine(DeleteStudent.findString());
 			}
 
@@ -31,15 +31,19 @@ public class MainMenu {
 			System.out.println("Change Student Grades/Schedule");
 			System.out.println("1)   Change Grade");
 			System.out.println("2)   Switch Classes");
-			input = userInput.nextInt();
-			if(input == 1) {
-				//add the compile array list method here 
-				// add the change grade method
-			}
-			if(input == 2) {
-				//add the compile array list method here 
-				// add the change classes method
+			int input1 = userInput.nextInt();
+			if(input1 == 1) {
+				ChangeGrade.changeGrade();
+				StudentDataBank.CompileArray();
+				StudentDataBank.generateGPA();
+				PrintNames.printNames();
 				
+			}
+			if(input1 == 2) {
+				SwitchClasses.switchClass();
+				StudentDataBank.CompileArray();
+				StudentDataBank.generateGPA();
+				PrintNames.printNames();
 			}
 		}
 		if(input == 3) {
@@ -48,16 +52,20 @@ public class MainMenu {
 			System.out.println("1)   Sort by last name");
 			System.out.println("2)   Sort by GPA");
 			System.out.println("3)   Sort by period");
-			input = userInput.nextInt();
-			if(input == 1) {
-				//add the compile array list method here 
-				// add the sort last name method
-			}
-			if(input == 2) {
+			int input1 = userInput.nextInt();
+			if(input1 == 1) {
+				StudentDataBank.CompileArray();
+				StudentDataBank.generateGPA();
 				Collections.sort(StudentDataBank.studentData, new SortByGPA());
-				
+				PrintNames.printNames();
 			}
-			if(input == 3) {
+			if(input1 == 2) {
+				StudentDataBank.CompileArray();
+				StudentDataBank.generateGPA();
+				Collections.sort(StudentDataBank.studentData, new SortByLastName());
+				PrintNames.printNames();
+			}
+			if(input1 == 3) {
 				System.out.println("Sort by period");
 				System.out.println("1)   first period");
 				System.out.println("2)   second period");
