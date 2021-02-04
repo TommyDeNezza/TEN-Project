@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class ChangeGrade
+public class SwitchClasses
 	{
 	static Scanner userInput = new Scanner(System.in);
-	public static void changeGrade()
+	public static void switchClass()
 		{
-		System.out.println("What student would you like to alter grades for?");
+		System.out.println("What student would you like to alter classes for?");
 		String student = userInput.nextLine();
 		for(int i = 0; i < StudentDataBank.studentData.size(); i++)
 			{
@@ -15,23 +15,23 @@ public class ChangeGrade
 				String numb = userInput.nextLine();
 				if(numb.equals("1"))
 					{
-					System.out.println("What would you like to change the grade to?");
+					System.out.println("What would you like to change the class to?");
 					String grade = userInput.nextLine();
-					StudentDataBank.studentData.get(i).setGrade1(grade);
+					StudentDataBank.studentData.get(i).setClass1(grade);
 					System.out.println("Here's the new list:");
 					}
 				else if(numb.equals("2"))
 					{
-					System.out.println("What would you like to change the grade to?");
+					System.out.println("What would you like to change the class to?");
 					String grade = userInput.nextLine();
-					StudentDataBank.studentData.get(i).setGrade2(grade);
+					StudentDataBank.studentData.get(i).setClass2(grade);
 					System.out.println("Here's the new list:");
 					}
 				else if(numb.equals("3"))
 					{
-					System.out.println("What would you like to change the grade to?");
+					System.out.println("What would you like to change the class to?");
 					String grade = userInput.nextLine();
-					StudentDataBank.studentData.get(i).setGrade2(grade);
+					StudentDataBank.studentData.get(i).setClass3(grade);
 					System.out.println("Here's the new list:");
 					}
 				}
