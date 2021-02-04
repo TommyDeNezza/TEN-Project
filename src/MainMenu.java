@@ -33,14 +33,12 @@ public class MainMenu {
 			System.out.println("2)   Switch Classes");
 			int input1 = userInput.nextInt();
 			if(input1 == 1) {
-				ChangeGrade.changeGrade();
 				StudentDataBank.CompileArray();
 				StudentDataBank.generateGPA();
 				PrintNames.printNames();
 				
 			}
 			if(input1 == 2) {
-				SwitchClasses.switchClass();
 				StudentDataBank.CompileArray();
 				StudentDataBank.generateGPA();
 				PrintNames.printNames();
