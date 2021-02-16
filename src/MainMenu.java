@@ -20,10 +20,12 @@ public class MainMenu {
 			System.out.println("2)   Delete a student");
 			int input1 = userInput.nextInt();
 			if(input1 == 1) {
-				AddStudent.addToTextFile();
+				AddStudent.addStudent();
+				navigate();
 			}
 			if(input1 == 2) {
-				DeleteStudent.deleteLine(DeleteStudent.findString());
+				DeleteStudent.deleteStudent();
+				navigate();
 			}
 
 		}
@@ -67,7 +69,6 @@ public class MainMenu {
 			}
 		}
 		
-		//Test comment - ignore
 	}
 
 }
