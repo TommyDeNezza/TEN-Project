@@ -55,4 +55,21 @@ public class StudentDataBank
 			}
 		return 0;
 		}
+	public static void add(String s, String s1, String s2, String s3, String s4, String s5, String s6, String s7, double d) {
+		studentData.add(new Student(s, s1, s2, s3, s4, s5, s6, s7, d));
+	}
+	
+	public static void delete(String s, String s1) {
+		int i = 0;
+		for(Student student : studentData) {
+			System.out.println(i);
+			System.out.println(student.getFName());
+			if(student.getFName().equals(s) && student.getLName().equals(s1)){
+				studentData.remove(student);
+				break;
+			}
+			i++;
+		}
+		System.out.println("You have removed : "+ s + " " + s1);
+	}
 	}
