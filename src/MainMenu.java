@@ -48,8 +48,8 @@ public class MainMenu
 					}
 				if(input1 == 2)
 					{
-					//Not set up yet
 					StudentDataBank.generateGPA();
+					ChangeClasses.changeClass();
 					PrintNames.printNames();
 					}
 				}
