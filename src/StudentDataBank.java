@@ -60,15 +60,11 @@ public class StudentDataBank
 	}
 	
 	public static void delete(String s, String s1) {
-		int i = 0;
 		for(Student student : studentData) {
-			System.out.println(i);
-			System.out.println(student.getFName());
 			if(student.getFName().equals(s) && student.getLName().equals(s1)){
 				studentData.remove(student);
 				break;
 			}
-			i++;
 		}
 		System.out.println("You have removed : "+ s + " " + s1);
 	}

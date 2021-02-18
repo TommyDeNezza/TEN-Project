@@ -79,9 +79,9 @@ public class MainMenu
 					System.out.println("2)   second period");
 					System.out.println("3)   third period");
 					periodSort=userInput.nextInt();
+					Collections.sort(StudentDataBank.studentData, new SortByPeriod());
 					StudentDataBank.generateGPA();
 					PrintNames.printNames();
-					//Sorting is not set up yet / not working
 					}
 				}
 			}

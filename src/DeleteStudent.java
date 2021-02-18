@@ -11,10 +11,7 @@ public class DeleteStudent {
 		String [] inputs = nameInput.split(" ");
 		System.out.println();
 		String firstName = inputs[0];
-		System.out.println("fn : " + firstName);
 		String lastName = inputs [1];
-		System.out.println("ln : " + lastName);
-
 		StudentDataBank.delete(firstName, lastName);
 		
 		
