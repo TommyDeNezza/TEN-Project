@@ -42,7 +42,7 @@ public class MainMenu
 				int input1 = userInput.nextInt();
 				if(input1 == 1) 
 					{
-					//Not set up yet
+					ChangeGrade.changeGrade();
 					StudentDataBank.generateGPA();
 					PrintNames.printNames();	
 					}
