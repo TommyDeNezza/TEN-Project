@@ -74,14 +74,23 @@ public class MainMenu
 					}
 				if(input1 == 3) 
 					{
-					System.out.println("Sort by period");
-					System.out.println("1)   first period");
-					System.out.println("2)   second period");
-					System.out.println("3)   third period");
-					periodSort=userInput.nextInt();
+					System.out.println("Which period would you like to use in order to sort the student... ");
+					System.out.println("1, 2, 3");
+					int intput = userInput.nextInt();
 					StudentDataBank.generateGPA();
+					
+					if(intput == 1) {
+						Collections.sort(StudentDataBank.studentData, new SortByPeriod());
+					}
+					if(intput == 2) {
+						Collections.sort(StudentDataBank.studentData, new SortByPeriod2());
+					}
+					if(intput == 3) {
+						Collections.sort(StudentDataBank.studentData, new SortByPeriod3());
+					}
+					
 					PrintNames.printNames();
-					//Sorting is not set up yet / not working
+					
 					}
 				}
 			}
